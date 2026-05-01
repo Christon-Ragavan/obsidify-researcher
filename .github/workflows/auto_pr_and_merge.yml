@@ -14,6 +14,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+          
+      - name: Resolve conflicts (always accept incoming)
+        run: |
+          git config user.name "obsidify-ai-agent"
+          git config user.email "ai-agent@obsidify.bot"
+          git fetch origin
+          git checkout cn_notes/obsidian_session
+          git merge origin/main \
+            --strategy-option=ours \
+            --no-edit \
+            --allow-unrelated-histories || true
+          git push origin cn_notes/obsidian_session
+
 
       - name: Create PR if not exists
         env:
@@ -31,20 +47,9 @@ jobs:
             echo "PR #$EXISTING already exists"
           fi
 
-      - name: Auto merge PR (always accept incoming)
+      - name: Auto merge PR
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git config user.name "obsidify-ai-agent"
-          git config user.email "ai-agent@obsidify.bot"
-
-          git fetch origin
-          git checkout main
-          git pull origin main
-
-          git merge origin/cn_notes/obsidian_session \
-            --strategy-option=theirs \
-            --no-edit \
-            --allow-unrelated-histories || true
-
-          git push origin main
+          PR_NUMBER=$(gh pr list --head cn_notes/obsidian_session --json number -q '.[0].number')
+          gh pr merge $PR_NUMBER --squash --auto
