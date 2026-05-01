@@ -6,3 +6,4 @@ Test #1
 Test #2
 
 Test #3 changed git location
+Test #4 Auto Merged from branch cn_notes/obsidian_session
