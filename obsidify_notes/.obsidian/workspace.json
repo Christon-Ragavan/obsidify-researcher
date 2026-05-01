@@ -186,19 +186,19 @@
   },
   "active": "6f6f25a766700218",
   "lastOpenFiles": [
-    "obsidify_notes/Notes.md",
     "obsidify_notes/README.md",
-    "obsidify_notes/_old_git/logs/refs/remotes/origin/main",
-    "obsidify_notes/_old_git/logs/refs/remotes/origin/HEAD",
+    "obsidify_notes/Notes.md",
+    "obsidify_notes/Welcome.md",
     "obsidify_notes/_old_git/refs/remotes/origin/main",
     "obsidify_notes/_old_git/refs/remotes/origin/HEAD",
-    "obsidify_notes/_old_git/logs/refs/remotes/origin",
-    "obsidify_notes/_old_git/logs/refs/heads/main",
     "obsidify_notes/_old_git/refs/remotes/origin",
+    "obsidify_notes/_old_git/refs/remotes",
     "obsidify_notes/_old_git/refs/heads/main",
+    "obsidify_notes/_old_git/refs/heads",
+    "obsidify_notes/_old_git/packed-refs",
     "obsidify_notes/_old_git/objects/pack/pack-be211c84eaed1f5e5d07e2c129f752ff38d843f0.pack",
     "obsidify_notes/_old_git/objects/pack/pack-be211c84eaed1f5e5d07e2c129f752ff38d843f0.idx",
-    "obsidify_notes/Welcome.md",
+    "obsidify_notes/_old_git/objects/pack",
     "Welcome.md"
   ]
 }
