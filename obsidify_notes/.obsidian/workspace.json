@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidify_notes/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Notes"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidify_notes/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Notes"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidify_notes/Notes.md",
+                "file": "conflict-files-obsidian-git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Notes"
+              "title": "Outline of conflict-files-obsidian-git"
             }
           }
         ]
@@ -184,10 +182,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6f6f25a766700218",
+  "active": "c895af87e3c2f36c",
   "lastOpenFiles": [
-    "obsidify_notes/README.md",
     "obsidify_notes/Notes.md",
+    "conflict-files-obsidian-git.md",
+    "obsidify_notes/README.md",
     "obsidify_notes/Welcome.md",
     "obsidify_notes/_old_git/refs/remotes/origin/main",
     "obsidify_notes/_old_git/refs/remotes/origin/HEAD",
