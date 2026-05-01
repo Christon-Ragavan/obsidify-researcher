@@ -19,7 +19,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          EXISTING=$(gh pr list --head n_notes/obsidian_session --json number -q '.[0].number')
+          EXISTING=$(gh pr list --head cn_notes/obsidian_session --json number -q '.[0].number')
 
           if [ -z "$EXISTING" ]; then
             gh pr create \
