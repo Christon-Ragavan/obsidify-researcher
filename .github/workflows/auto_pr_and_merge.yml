@@ -52,4 +52,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           PR_NUMBER=$(gh pr list --head cn_notes/obsidian_session --json number -q '.[0].number')
-          gh pr merge $PR_NUMBER --squash --auto
+          gh pr merge $PR_NUMBER --squash
