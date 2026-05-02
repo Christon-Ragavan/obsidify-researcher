@@ -25,7 +25,7 @@ echo "Recreating $BRANCH from main..."
 git checkout -b "$BRANCH" || { echo "ERROR: Failed to create branch"; exit 1; }
 
 echo "Pushing $BRANCH to origin..."
-git push origin "$BRANCH" || { echo "ERROR: Failed to push branch"; exit 1; }
+git push --set-upstream origin "$BRANCH" || { echo "ERROR: Failed to push branch"; exit 1; }
 
 echo ""
 echo "Done. $BRANCH is reset to latest main."
